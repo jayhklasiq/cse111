@@ -18,10 +18,9 @@ Your program must print the discount amount if applicable, the sales tax amount,
 todays_date = datetime.now()
 day_ofthe_week = todays_date.weekday()
 
-day_ofthe_week = 1
 sales_subtotal = float(input('Please enter the subtotal: '))
 #compute the total amount due by adding sales tax of 6% to the subtotal.
-if day_ofthe_week == 1 or day_ofthe_week == 2 and sales_subtotal >= 50:
+if day_ofthe_week == 1 or day_ofthe_week == 2 and sales_subtotal >= 50:    
   discount = 0.1 * sales_subtotal
   print(f'Discount: {discount:.2f}')
   sales_subtotal = sales_subtotal - discount
@@ -29,16 +28,11 @@ if day_ofthe_week == 1 or day_ofthe_week == 2 and sales_subtotal >= 50:
   print (f'Sales tax: {sales_tax:.2f}')
   total_amount_due = sales_subtotal + sales_tax
   print (f'Total: {total_amount_due:.2f}')
-else:  
+else:
   sales_tax = 0.06 * sales_subtotal
   print (f'Sales tax: {sales_tax:.2f}')
   total_amount_due  = sales_subtotal + sales_tax
   print (f'Total: {total_amount_due:.2f}')
-
-
-    
-  
-  
 
 
   
