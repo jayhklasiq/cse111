@@ -22,11 +22,10 @@ def main():
     radius = radiuses[i]
     height = heights[i]
     cost = cost_per_can[i]
-    
-  volume = vol(radius, height) 
-  surface_area = calculate_surface_area(radius, height)
-  storage_efficiency = volume / surface_area 
-  print(f'{name:13} {storage_efficiency:.2f}')
+    volume = vol(radius, height) 
+    surface_area = calculate_surface_area(radius, height)
+    storage_efficiency = volume / surface_area
+    print(f'{name}\t{storage_efficiency:.2f}')
   
   
     
