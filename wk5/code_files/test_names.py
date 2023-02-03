@@ -3,9 +3,10 @@ from names import make_full_name, \
 import pytest
 
 def test_make_full_name():
-    assert make_full_name('Olaoye', 'Joshua') == 'Joshua; Olaoye'
-    assert make_full_name('Agbeko', 'Edudzi') == 'Edudzi; Agbeko'
-    assert make_full_name('Nyamkyere', 'Elijah') == 'Elijah; Nyamekyere'
+    assert make_full_name('Joshua', 'Olaoye') == 'Olaoye; Joshua'
+    assert make_full_name('Edudzi', 'Agbeko') == 'Agbeko; Edudzi'
+    assert make_full_name('James', 'Owolabi') == 'Owolabi; James'
+
     
 def test_extract_family_name():
     assert extract_family_name('Elijah; Nyamkyere') == 'Elijah'
