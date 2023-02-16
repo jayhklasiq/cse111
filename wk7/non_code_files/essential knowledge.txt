@@ -1,0 +1,21 @@
+List: collections of data into a single variable
+Dictionary: making a paired list.
+e.g., person = {'first': 'Christopher'}
+person['last'] = 'Harrison'
+
+Arrays: numerical data types only.
+
+List: all kinds of data types.
+
+Insert function: using the variable_name.insert(0(stands for what number location you want to insert your collection in the list), 'Bill'(the data you want to insert in the parenthesis).
+
+Sort function: variable_name.sort() will arrange your data in alphabetical order
+
+Append function: variable_name.append(data you want to input) will input your data into the collection in the variable name, but unlike the insert function, it adds your data to the end of the list
+
+[:] – variable_name[begining_number:end_number] will only get collections in the list from the beginning number and the end number. But it would be best if you stored them in another variable name.
+
+When you use the 'for' loop and want to loop a particular number if times, then you use the range function.
+e.g., for index in range(0, 2):
+		print (index)
+"While' is for testing if something remains true. The catch is that it needs to change to false, or you'll be stuck in the while loop.

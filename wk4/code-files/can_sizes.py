@@ -9,7 +9,7 @@ def main():
   heights = []
   cost_per_can = [] 
     
-  with open('storage_efficy.txt') as storage_efficy:
+  with open('wk4\code-files\storage_efficy.txt') as storage_efficy:
       for line in storage_efficy:
         line = line.split('-')
         names.append(line[0])

@@ -31,7 +31,6 @@ def prefix(string1, string2):
     pre = string1[0 : i]
     return pre
 
-
 def suffix(string1, string2):
     """Return the suffix, if any, that appears in both string1 and
     string2. In other words, return a string of the characters

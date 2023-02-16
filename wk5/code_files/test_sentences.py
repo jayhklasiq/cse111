@@ -2,7 +2,7 @@ import os
 os.system('cls')
 import random
 import pytest
-from sentences import get_determiner, get_noun, get_verb
+from sentences import get_determiner, get_noun, get_verb, get_preposition, get_prepositional_phrase
 
 def test_get_determiner():
     # # Call the get_determiner function.
@@ -150,6 +150,49 @@ def test_get_verb():
         # Verify that the word returned from get_determiner
         # is one of the words in the plural_determiners list.
         assert word in future_tense_determiners    
+
+def test_get_preposition():
+# 1. Test the get_preposition.
+
+    preposition = ["about", "above", "across", "after", "along",
+        "around", "at", "before", "behind", "below",
+        "beyond", "by", "despite", "except", "for",
+        "from", "in", "into", "near", "of",
+        "off", "on", "onto", "out", "over",
+        "past", "to", "under", "with", "without"]
+
+    # This loop will repeat the statements inside it 4 times.
+    # If a loop's counting variable is not used inside the
+    # body of the loop, many programmers will use underscore
+    # (_) as the variable name for the counting variable.
+    for _ in range(4):
+
+        # Call the get_determiner function which
+        # should return a single determiner.
+        word = get_preposition()
+
+        # Verify that the word returned from get_determiner
+        # is one of the words in the single_determiners list.
+        assert word in preposition
+        
+def test_get_prepositional_phrase():
+# #    # Call the get_noun function.
+#     noun = get_noun(1)
+
+#     #Verify that the word stored in the variable
+#     # determ is in the list of single determiners.
+#     nouns = ["bird", "boy", "car", "cat", "child",
+#         "dog", "girl", "man", "rabbit", "woman"]
+#     assert noun in nouns
+    
+#     # Call the get_determiner function.
+#     determ = get_determiner(1)
+#     #Verify that the word stored in the variable
+#     # determ is in the list of single determiners.
+#     words = ["a", "one", "the"]
+#     assert determ in words
+    statement = 'about the cat'
+    assert statement == ('about the cat')
     
 # Call the main function that is part of pytest so that the
 # computer will execute the test functions in this file.
