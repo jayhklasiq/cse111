@@ -7,7 +7,7 @@ def main():
     I_NUMBER = 0
     STUDENT_NAME = 1
     student_dictionary = read_dictionary('wk9\code_files\students.csv', I_NUMBER)
-        
+     
     request_number = (input('What is your NINE digit I-Number: '))
     
     if not request_number.isdigit():
