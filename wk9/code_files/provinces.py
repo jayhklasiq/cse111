@@ -10,9 +10,7 @@ def main():
         # in the list.
         for line in province_file:
             province_list = line.strip()
-
-
-    
+            
     print (province_list)
     
 if __name__ == '__main__':
