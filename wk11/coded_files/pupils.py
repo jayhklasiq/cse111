@@ -7,9 +7,22 @@ GIVEN_NAME_INDEX = 0
 SURNAME_INDEX = 1
 BIRTHDATE_INDEX = 2
 def main():
-    compound_list = read_compound_list('wk11\coded_files\pupils.csv')
+    #Call the read_compound_list function to read the 
+    # pupils.csv file into a list named students_list.
+    student_list = read_compound_list('wk11\coded_files\pupils.csv')
     
-
+    #Write a lambda function that will extract the birthdate from a student.
+    extract_birthday = lambda student: student[BIRTHDATE_INDEX]
+    
+    #Write a call to the Python built-in sorted function 
+    # that will sort the students_list by birthdate from oldest to youngest.
+    sorted_list = sorted(student_list, key= extract_birthday)
+    
+    # Print the students_list by calling the print_list function.
+    print("Ordered by given name:")
+    print_list(sorted_list)
+    
+    
 def read_compound_list(filename):
     """Read the text from a CSV file into a compound list.
     The compound list will contain small lists. Each small
