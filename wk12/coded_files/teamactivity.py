@@ -55,7 +55,7 @@ def populate_main_window(frm_main):
     
     
     # This function will be called each time the user releases a key.
-    def calculate(event):
+    def calculate():
         """Compute and display the user's slowest
         and fastest beneficial heart rates.
         """
