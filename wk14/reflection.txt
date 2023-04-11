@@ -1,0 +1,21 @@
+Please respond thoroughly (at least two sentences for each question) to
+the following three questions.
+
+1. Describe an experience you had this semester where you saw the power of
+functions.
+I don't think a particular experience helped me see this, but then the continuous 
+knowledge I gained on the topic helped me appreciate and look at programs in smaller bits, which are functions.
+
+
+
+2. In your judgment, what is the value of test functions?
+Test functions give me the confidence that my function code works fine and it can be resuable. 
+Test functions go through my function code and confirm that the program does what it is meant to do. 
+
+3. Describe your process for troubleshooting and fixing a program that
+has a problem. What is one thing you can do to improve your process?
+You need to know what type of error you're dealing with first. You can find this out
+by looking at the error message. You can then tackle that problem based on your knowledge 
+of resolving the problem. 
+
+
